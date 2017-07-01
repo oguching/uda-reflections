@@ -1,0 +1,36 @@
+q: how can you use the staging area to make sure you have
+one commit per logical change?
+
+when you do a `git diff` it shows you the difference in the
+files between that in the staging area and working directory.
+
+q: what are some situations when branches would be helpful
+in keeping your history organised? How would branches help?
+
+you can work on a feature without touching the main master
+branch. you can do units of work.
+
+You can create a new branch if you are working on a new feature,
+fixing bugs...
+
+It helps keeps your project organised especially when working with
+others.
+
+master, development, experimental branches.
+
+q: how do the diagrams help you visualise the branch structure?
+
+diagrams show which commits have a parent and which commits that are
+not reachable.
+A commit is not reachable if it is not in the path of the branch.
+We want to avoid commits that are unreachable as much as possible.
+
+diagrams helps us show which branches contain which commits.
+
+q: what is the result of merging two branches together?
+why do we represent it in the diagram the way we do?
+
+merging two branches creates a new branch that contains the history
+of both branches combined into one. All changes are effected.
+It is represented in the diagram as a new commit with arrows pointing
+to each parent because they both make up the new branch.
